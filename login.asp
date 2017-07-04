@@ -13,8 +13,8 @@
 	<title>ENAM LOGIN</title>
 
 	<link rel="stylesheet" href="assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
-	<link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
+	<!--link rel="stylesheet" href="assets/css/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic"-->
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/neon-core.css">
 	<link rel="stylesheet" href="assets/css/neon-theme.css">
@@ -34,9 +34,6 @@
 <body class="page-body login-page login-form-fall" data-url="http://neon.dev">
 
 <!-- This is needed when you send requests via Ajax -->
-<script type="text/javascript">
-var baseurl = '';
-</script>
 
 <div class="login-container">
 	
@@ -44,9 +41,8 @@ var baseurl = '';
 		
 		<div class="login-content">
 			
-			<a href="index.html" class="logo">
-				<img src="assets/images/logo_enamm.fw.png" width=100%
-				 alt="" />
+			<a href="#" class="logo">
+				<img src="assets/images/logo_enamm.fw.png" width=100% alt="" />
 			</a>
 			
 			<p class="description">¡Estimado usuario, inicie sesión para acceder al sistema!</p>
@@ -60,7 +56,7 @@ var baseurl = '';
 		
 	</div>
 
-	<img id="img" src="IMG/enam.png" width=100% height="163">
+	
 </div>
 
 <div style="text-align: center;">
@@ -78,7 +74,7 @@ var baseurl = '';
 				<p>Ingrese <strong>demo</strong>/<strong>demo</strong> como usuario y contraseña.</p>
 			</div>
 
-			<form method="post" role="form" id="form_login">
+			<form method="post" role="form" id="form_login" action="lol.asp">
 				<div class="form-group">
 					
 					<div class="input-group">
@@ -97,12 +93,11 @@ var baseurl = '';
 						<div class="input-group-addon">
 							<i class="entypo-key"></i>
 						</div>
-						
 						<input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" autocomplete="off" />
 					</div>
 				
 				</div>
-				<div class="form-group">
+				<div class="form-group" >
 					<button type="submit" class="btn btn-primary btn-block btn-login">
 						<i class="entypo-login"></i>
 						Iniciar Sesión
@@ -119,8 +114,14 @@ var baseurl = '';
 			</div>
 
 		</div>
-
+<script type="text/javascript">
+	console.log("dddddd");
+</script>>
 
 </div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/validacion.js"></script> 
+
 </body>
 </html>
