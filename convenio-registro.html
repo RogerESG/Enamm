@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Sistema de Convenios ENAMM</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="main.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
+		</div>
+
+		<nav>
+
+			<ul>
+				<li class="submenu">
+					<a href="#"><span class="icon-user-tie"></span>Empresas<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="empresa-registro.html">Registro<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+
+				<li class="submenu">
+					<a href="#"><span class="icon-users"></span>Convenios<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="convenio-registro.html">Registro<span class="icon-dot"></span></a></li>
+						<li><a href="convenio-condiciones.html">Condiciones<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+
+				<li class="submenu">
+					<a href="#"><span class="icon-tree"></span>Areas<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="area-registro.html">Registro<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+				
+				<li class="submenu">
+					<a href="#"><span class="icon-coin-dollar"></span>Prestaciones<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="prestacion-institucion.html">La Institucion (ENAMM)<span class="icon-dot"></span></a></li>
+						<li><a href="prestacion-asociado.html">La Empresa<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+				
+				<li class="submenu">
+					<a href="#"><span class="icon-envelop"></span>Reportes de Gestión<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="#">Seguimiento de Convenios<span class="icon-dot"></span></a></li>
+						<li><a href="#">Convenios Prescritos<span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+
+				<li class="submenu">
+					<a href="#">
+						<img src="assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />John Henderson<span class="caret icon-arrow-down6"></span></a>
+					<ul class="children">
+						<li><a href="login.html">Salir</a></i></li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</nav>
+
+	</header>
+		
+		<hr />
+		
+		<ol class="breadcrumb bc-3" >
+			<li>
+				<a href="index.html"><i class="fa-home"></i>Home</a>
+			</li>			
+			<li class="active">		
+					<strong>Registro de Convenios</strong>
+			</li>
+		</ol>
+					
+		<h2>Registro de Convenios</h2>
+		<br />
+		<form role="form" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-1 control-label">Empresa</label>
+				
+				<div class="col-sm-5">
+					<select class="form-control">
+						<option>Camara de comercio de Lima</option>
+						<option>Camara de comercio de AQP</option>						
+					</select>
+				</div>
+			</div>
+		</form>
+
+		<div class="row">
+			
+			<div class="col-md-12">
+				
+				
+				<div class="panel panel-primary" data-collapsed="0">								
+				
+					<div class="panel-heading">
+						<div class="panel-title">
+							<strong>CONDICIONES</strong>
+						</div>
+						
+						<div class="panel-options">
+							<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+							<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+							<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>							
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						
+						<form role="form" class="form-horizontal">
+			
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Condición</label>
+								
+								<div class="col-sm-5">
+									<select class="form-control">
+										<option>Diplomado</option>
+										<option>Taller</option>										
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="field-1" class="col-sm-3 control-label">Cantidad</label>
+								
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="convenio-cantidad" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="field-1" class="col-sm-3 control-label">Porcentaje Descuento</label>
+								
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="convenio-descuento" placeholder="">
+								</div>
+							</div>							
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Regla</label>
+								
+								<div class="col-sm-5">
+									<select class="form-control">
+										<option>1er. ciclo</option>
+										<option>2do. ciclo</option>
+										<option>semestral</option>										
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-6">
+									<button type="submit" class="btn btn-default">Guardar</button>
+								</div>
+							</div>	
+								
+							<br />
+		
+							<script type="text/javascript">
+							jQuery( document ).ready( function( $ ) {
+								var $table1 = jQuery( '#table-condiciones' );
+								
+								// Initialize DataTable
+								$table1.DataTable( {
+									"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+									"bStateSave": true
+								});
+								
+								// Initalize Select Dropdown after DataTables is created
+								$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
+									minimumResultsForSearch: -1
+								});
+							} );
+							</script>
+							
+							<table class="table table-bordered datatable" id="table-condiciones">
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Condición</th>
+										<th>Cantidad</th>
+										<th>% Descuento</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>1</td>
+										<td>Diplomados</td>
+										<td>4</td>
+										<td class="center">10</td>										
+									</tr>
+									<tr class="even gradeC">
+										<td>2</td>
+										<td>Programa de especializacion</td>
+										<td>5</td>
+										<td class="center">100</td>										
+									</tr>
+									<tr class="odd gradeA">
+										<td>3</td>
+										<td>Seminarios</td>
+										<td>10</td>
+										<td class="center">20</td>										
+									</tr>															
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Item</th>
+										<th>Condición</th>
+										<th>Cantidad</th>
+										<th>% Descuento</th>
+									</tr>
+								</tfoot>
+							</table>
+														
+						</form>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="panel panel-primary" data-collapsed="0">
+				
+					<div class="panel-heading">
+						<div class="panel-title">
+							<strong>VIGENCIA DE CONVENIO</strong>
+						</div>
+						
+						<div class="panel-options">
+							<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+							<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+							<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>							
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						<form role="form" class="form-horizontal">
+							<div class="row">											
+								
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="col-sm-4 control-label">Fecha de Inicio</label>
+										
+										<div class="col-sm-6">
+											<div class="input-group">
+												<input type="text" class="form-control datepicker" data-format="D, dd MM yyyy">
+												
+												<div class="input-group-addon">
+													<a href="#"><i class="entypo-calendar"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-2">
+									<div class="form-group">
+										<div class="col-sm-offset-3 col-sm-5">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox">Indefinido
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="col-sm-4 control-label">Fecha de Fin</label>
+										
+										<div class="col-sm-8">
+											<div class="input-group">
+												<input type="text" class="form-control datepicker" data-format="D, dd MM yyyy">
+												
+												<div class="input-group-addon">
+													<a href="#"><i class="entypo-calendar"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>								
+								
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="col-sm-4 control-label">Estado de Convenio</label>
+										
+										<div class="col-sm-6">
+											<select class="form-control">
+												<option>Vigente</option>
+												<option>No vigente</option>
+												<option>Suspendido</option>												
+											</select>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-6">
+									
+								</div>
+								
+								<div class="clear"></div>																																					
+								
+							</div>
+						</form>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		<!-- Inicio Dependencias ejecutores --->
+		<div class="row">
+			
+			<div class="col-md-12">
+				
+				
+				<div class="panel panel-primary" data-collapsed="0">								
+				
+					<div class="panel-heading">
+						<div class="panel-title">
+							<strong>DEPENDENCIAS EJECUTORES</strong>
+						</div>
+						
+						<div class="panel-options">
+							<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+							<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+							<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>							
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						
+						<form role="form" class="form-horizontal">
+			
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Dependencia</label>
+								
+								<div class="col-sm-5">
+									<select class="form-control">
+										<option>Escuela Naval del Perú</option>
+										<option>Servicio Naviero de la Marina</option>										
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Responsable de ejecución</label>
+								
+								<div class="col-sm-5">
+									<select class="form-control">
+										<option>Abog. Carlos Perez Mita</option>
+										<option>Ing. Marcelo Medrano</option>										
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-6">
+									<button type="submit" class="btn btn-default">Agregar</button>
+								</div>
+							</div>	
+								
+							<br />
+		
+							<script type="text/javascript">
+							jQuery( document ).ready( function( $ ) {
+								var $table1 = jQuery( '#table-dependencias-ejecutores' );
+								
+								// Initialize DataTable
+								$table1.DataTable( {
+									"aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+									"bStateSave": true
+								});
+								
+								// Initalize Select Dropdown after DataTables is created
+								$table1.closest( '.dataTables_wrapper' ).find( 'select' ).select2( {
+									minimumResultsForSearch: -1
+								});
+							} );
+							</script>
+							
+							<table class="table table-bordered datatable" id="table-dependencias-ejecutores">
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Dependencia</th>
+										<th>Responsable Ejecución</th>										
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="odd gradeX">
+										<td>1</td>
+										<td>Escuela Naval del Perú (DIRESNA)</td>
+										<td>Abog. Carlos Perez Mita</td>																	
+									</tr>
+									<tr class="even gradeC">
+										<td>2</td>
+										<td>Servicio Naviero de la Marina (JESERNAVIMAR)</td>
+										<td>Ing. Marcelo Medrano</td>																		
+									</tr>																
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Item</th>
+										<th>Dependencia</th>
+										<th>Responsable Ejecución</th>										
+									</tr>
+								</tfoot>
+							</table>
+														
+						</form>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		<!-- Fin Dependencias ejecutores --->
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="panel panel-primary" data-collapsed="0">
+				
+					<div class="panel-heading">
+						<div class="panel-title">
+							<strong>RESPONSABLES FIRMANTES</strong>
+						</div>
+						
+						<div class="panel-options">
+							<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+							<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+							<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>							
+						</div>
+					</div>
+					
+					<div class="panel-body">
+						<form role="form" class="form-horizontal">
+							<div class="row">	
+								
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Representante de LA INSTITUCIÓN</label>
+										
+										<div class="col-sm-5">
+											<select class="form-control">
+												<option>Dir. Fernando Valeriano</option>
+												<option>Dir. Fernando Valeriano 2</option>										
+											</select>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="col-md-12"><label class="control-label">Representante de LA EMPRESA</label>
+									<br><br>
+									<div class="panel panel-primary" data-collapsed="0">
+									
+										<div class="panel-heading">
+											<div class="panel-title">
+												<strong>Datos del Representante</strong>
+											</div>
+											
+											<div class="panel-options">
+												<a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+												<a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+												<a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>							
+											</div>
+										</div>
+										
+										<div class="panel-body">
+											<form role="form" class="form-horizontal">
+												<div class="row">											
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-4 control-label">Apellidos y Nombres</label>
+															
+															<div class="col-sm-8">
+																<input type="text" class="form-control" id="representante-apellidos" placeholder="">
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-3 control-label">Cargo</label>
+															
+															<div class="col-sm-9">
+																<input type="text" class="form-control" id="representante-cargo" placeholder="">
+															</div>
+														</div>
+													</div>
+													
+													<div class="clear"></div>								
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-4 control-label">Email</label>
+															
+															<div class="col-sm-8">
+																<input type="email" class="form-control" id="representante-email" placeholder="">
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-6">
+														
+													</div>
+													
+													<div class="clear"></div>								
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-4 control-label">Teléfono</label>
+															
+															<div class="col-sm-8">
+																<input type="tel" class="form-control" id="representante-telefono" placeholder="">
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-3 control-label">Fijo</label>
+															
+															<div class="col-sm-9">
+																<input type="tel" class="form-control" id="representante-telefono-fijo" placeholder="">
+															</div>
+														</div>
+													</div>
+													
+													<div class="clear"></div>
+													
+													<div class="col-md-12">
+														<div class="form-group">
+															<label for="field-1" class="col-sm-2 control-label">Observaciones</label>
+															
+															<div class="col-sm-10">
+																<textarea class="form-control" id="representante-obs" placeholder=""></textarea>
+															</div>
+														</div>							
+													</div>
+													
+																										
+													
+												</div>
+											</form>
+											
+										</div>
+									
+									</div>
+								
+								</div>															
+								
+							</div>
+						</form>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		
+		<form role="form" class="form-horizontal">
+			
+			<!--label for="field-1" class="control-label">Observaciones Generales</label>
+			<div class="form-group">
+				
+				
+				<div class="col-sm-12">
+					<textarea class="form-control" id="contacto-obs" placeholder=""></textarea>
+				</div>
+			</div-->
+			<div class="form-group">				
+				
+				<div class="col-sm-5">
+					
+					<!--input type="file" class="form-control" /-->
+					<label for="archivo" class="upload-button"><i class='glyphicon glyphicon-file'></i> Adjuntar Convenio Digital</label>
+					<input id="archivo" name="archivo" type="file" style="display:none" />
+					
+				</div>
+			</div>			
+		</form>
+		
+		<!-- Footer -->
+		<footer class="main">
+			
+			&copy; 2017 <strong>Adapterc.com</strong> Powered by <a href="http://adapterc.com" target="_blank">Adapterc</a>
+		
+		</footer>
+	</div>
+
+	
+</div>
+
+
+	
+
+
+
+
+
+	<!-- Imported styles on this page -->
+	<link rel="stylesheet" href="assets/js/datatables/datatables.css">
+	<link rel="stylesheet" href="assets/js/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="assets/js/select2/select2.css">
+	<link rel="stylesheet" href="assets/js/jvectormap/jquery-jvectormap-1.2.2.css">
+	<link rel="stylesheet" href="assets/js/rickshaw/rickshaw.min.css">
+	
+
+	<!-- Bottom scripts (common) -->
+	<script src="assets/js/gsap/TweenMax.min.js"></script>
+	<script src="assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/neon-api.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/fileinput.js"></script>
+	<script src="assets/js/jvectormap/jquery-jvectormap-europe-merc-en.js"></script>
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+	<script src="assets/js/rickshaw/vendor/d3.v3.js"></script>
+	<script src="assets/js/rickshaw/rickshaw.min.js"></script>
+	<script src="assets/js/raphael-min.js"></script>
+	<script src="assets/js/morris.min.js"></script>
+	<script src="assets/js/toastr.js"></script>
+	<script src="assets/js/datatables/datatables.js"></script>
+	<script src="assets/js/select2/select2.min.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/neon-custom.js"></script>
+
+
+	<!-- Demo Settings -->
+	<script src="assets/js/neon-demo.js"></script>
+
+</body>
+</html>
